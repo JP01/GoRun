@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gorun.LogRun"
+    android:padding="16dp">
+
+
+    <com.gorun.SAutoBgButton
+        android:background="@drawable/menu_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/menuButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/latitude"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="12sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/longitude"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="12sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lat_lng_default"
+        android:id="@+id/latText"
+        android:textSize="12sp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lat_lng_default"
+        android:id="@+id/longText"
+        android:textSize="12sp"
+        android:layout_above="@+id/runID"
+        android:layout_alignLeft="@+id/latText"
+        android:layout_alignStart="@+id/latText" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/run_id"
+        android:id="@+id/runID"
+        android:textSize="12sp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/runIDText"
+        android:textSize="12sp"
+        android:gravity="center_horizontal"
+        android:layout_alignTop="@+id/runID"
+        android:layout_alignLeft="@+id/latText"
+        android:layout_alignStart="@+id/latText" />
+
+
+    <com.gorun.SAutoBgButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/play"
+        android:id="@+id/startButton"
+        android:enabled="true"
+        android:layout_gravity="center"
+        android:layout_alignTop="@+id/stopButton"
+        android:layout_alignLeft="@+id/stopButton"
+        android:layout_alignStart="@+id/stopButton" />
+
+
+    <com.gorun.SAutoBgButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stop"
+        android:id="@+id/stopButton"
+        android:clickable="false"
+        android:enabled="false"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/recordingText"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/startButton"
+        android:layout_centerHorizontal="true" />
+
+    <com.gorun.miliChrono
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer"
+        android:format="%s"
+        android:layout_below="@+id/recordingText"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:id="@+id/runNameText"
+        android:layout_marginBottom="24dp"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:layout_above="@+id/startButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/instruction"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:id="@+id/instruction"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/runNameText"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

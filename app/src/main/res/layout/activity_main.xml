@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.gorun.MainActivity"
+    android:background="@drawable/bgrnd"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+        <LinearLayout android:layout_weight="1" android:layout_height="fill_parent"
+            android:layout_width="fill_parent" android:id="@+id/logo_container">
+
+            <ImageView
+                android:src="@drawable/logo2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView"
+                android:contentDescription="@string/logo"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_weight="1" android:layout_height="fill_parent"
+            android:layout_width="fill_parent" android:orientation="horizontal"
+            android:id="@+id/button_container"
+            android:baselineAligned="false">
+
+            <FrameLayout android:layout_weight="1" android:layout_height="fill_parent"
+                android:layout_width="fill_parent" android:id="@+id/new_run_container">
+
+                <com.gorun.SAutoBgButton
+                    android:background="@drawable/new_run_button"
+                    android:id="@+id/newRunButton"
+                    android:layout_width="160dp"
+                    android:layout_height="74dp"
+                    android:layout_gravity="center" />
+
+
+            </FrameLayout>
+
+            <FrameLayout android:layout_weight="1" android:layout_height="fill_parent"
+                android:layout_width="fill_parent" android:id="@+id/previous_run_container">
+
+                <com.gorun.SAutoBgButton
+                    android:background="@drawable/prev_run_button"
+                    android:id="@+id/previousRunsButton"
+                    android:layout_width="160dp"
+                    android:layout_height="74dp"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+        </LinearLayout>
+</LinearLayout>
+
+
+
